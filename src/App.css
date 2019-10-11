@@ -7,16 +7,21 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #FFA500;
+background-image: url("bg.jpg");
+height: 250px;
 }
 
 .App-link {
-  color: #09d3ac;
+  color:green;
+}
+.nav-link{
+  color: white;
+  font-weight:bold;
+}
+.card{
+  margin-top: 50px;
+
+  margin-right: 0px;
+  margin-left: 0px;
 }
