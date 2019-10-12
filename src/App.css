@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  align-self: center;
+
 }
 
 .App-header {
@@ -24,4 +25,37 @@ height: 250px;
 
   margin-right: 0px;
   margin-left: 0px;
+  border-style: solid;
+  border-color:  #FFA500;
+  border-width: 3px;
+  border-radius: 5px;
+}
+.navig{
+  background-color: #C55A11;opacity:0.6;
+  height: 50px;
+
+}
+.card-img-top{
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+.card-title{
+  font-weight: bolder;
+
+}
+.list-group{
+  opacity:1;
+  border-style: solid;
+  border-color:  #FFA500;
+  border-width: 4px;
+  border-radius: 5px;
+}
+.list-group-item{
+  align-self: left;
+  font-weight: bold;
+  border-style: solid;
+  border-color:  #FFA500;
+  border-width: 4px;
+  border-radius: 5px;
 }

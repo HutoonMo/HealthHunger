@@ -12,7 +12,16 @@ this.state={
     foodlist:this.props.rest.foodlist,
 };
     }
-      render() { return(
+      render() { 
+          var cat1;
+          var cat2;
+          var cat3;
+          if(this.state.name=="sinless"){
+              cat1= <div> <img src={dairyfree} width="50" height="50" className="d-inlines align-top" alt=""/> <img src={glutenfree} width="50" height="50" className="d-inlines align-top" alt=""/></div>;
+              cat2= <div> <img src={glutenfree} width="50" height="50" className="d-inlines align-top" alt=""/> <img src={nutfree} width="50" height="50" className="d-inlines align-top" alt=""/></div> ;
+          
+              cat3= <div> <img src={nutfree} width="50" height="50" className="d-inlines align-top" alt=""/></div> ;
+            } return(
 <div class="card" style={{ width: "100%" }}>
   <img class="card-img-top" src={this.state.logo} alt="Card image cap"/>
   <div class="card-body">
@@ -20,9 +29,9 @@ this.state={
     
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">{this.state.foodlist[0]} <img src={dairyfree} width="50" height="50" className="d-inlines align-top" alt=""/></li>
-    <li class="list-group-item">{this.state.foodlist[1]}</li>
-    <li class="list-group-item">{this.state.foodlist[2]}</li>
+    <li class="list-group-item">{this.state.foodlist[0]} {cat1}</li>
+    <li class="list-group-item">{this.state.foodlist[1]} {cat2}</li>
+    <li class="list-group-item">{this.state.foodlist[2]} {cat3}</li>
   </ul>
 
 </div>

@@ -19,10 +19,13 @@ rests:[{name:"sinless",logo:sinless,foodlist:['Special Vegan Burger', 'Vegetable
 
   render(){
   return (
+
     <div className="App">
+
       <Header/>
-      <RestaurantList rest={this.state.rests}/>
+     
     </div>
+
   );
 }
 }
