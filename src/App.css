@@ -101,3 +101,10 @@ div1:before {
   border-width: 1px;
   border-radius: 5px;
 }
+.mycartdiv{
+margin-top: 50px;
+margin-bottom:50px ;
+color: #ffc107;
+font-weight: bolder;
+font-size: 60px;
+}
