@@ -1,10 +1,31 @@
 import React, { Component } from 'react';
-
+import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 class Signin extends Component {
   render() {
     return (
-        <div>
-          <h2>Signin</h2>
+        <div> <h2>Sign In</h2>
+        
+        <div className="form" style={{display: 'flex', justifyContent: 'center'}}>
+          
+          <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>Password</Form.Label>
+    <Form.Control type="password" placeholder="Password" />
+  </Form.Group>
+
+  <Button variant="warning" type="submit">
+    Sign In
+  </Button>
+</Form>
+        </div>
         </div>
     );
   }

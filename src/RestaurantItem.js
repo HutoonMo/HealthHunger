@@ -8,6 +8,7 @@ class RestaurantItem extends Component {
       name: this.props.rest.name,
       logo: this.props.rest.logo,
       clicked: false,
+      foodlist:this.props.rest.foodlist,
     };
   }
 
@@ -19,20 +20,20 @@ class RestaurantItem extends Component {
     var show = "";
     if (this.state.clicked) {
       show = <RestaurantPage rest={this.props.rest} />;
-      console.log("clicked");
+      console.log(this.props.rest);
       //this.setState({ clicked: false })
     } else {
       show = (
-        <div class="card" style={{ width: "89%" }}>
+        <div className="card" style={{ width: "89%" }}>
           <img
-            class="card-img-top"
+            className="card-img-top"
             src={this.state.logo}
             alt="Card image cap"
           />
-          <div class="card-body">
+          <div className="card-body">
             <a
               onClick={() => this.setState({ clicked: true })}
-              class="btn btn-warning btn-lg"
+              className="btn btn-warning btn-lg"
             >
               {this.state.name}
             </a>

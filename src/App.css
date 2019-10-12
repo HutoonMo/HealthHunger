@@ -9,8 +9,10 @@
 
 .App-header {
   background-color: #FFA500;
-background-image: url("bg.jpg");
-height: 250px;
+background-image: url("bg.png");
+height: 200px;
+background-repeat: no-repeat;
+background-size: 110% 190%;
 }
 
 .App-link {
@@ -18,7 +20,10 @@ height: 250px;
 }
 .nav-link{
   color: white;
-  font-weight:bold;
+ font-size: 20px;
+}
+.nav-link:hover{
+  color: #385723;
 }
 .card{
   margin-top: 50px;
@@ -26,13 +31,13 @@ height: 250px;
   margin-right: 0px;
   margin-left: 0px;
   border-style: solid;
-  border-color:  #FFA500;
-  border-width: 3px;
+  border-color:  #969994;
+  border-width: 1px;
   border-radius: 5px;
 }
 .navig{
-  background-color: #C55A11;opacity:0.6;
-  height: 50px;
+  background-color: #dc9c70;
+  height: 35px;
 
 }
 .card-img-top{
@@ -45,17 +50,54 @@ height: 250px;
 
 }
 .list-group{
-  opacity:1;
-  border-style: solid;
-  border-color:  #FFA500;
-  border-width: 4px;
-  border-radius: 5px;
+
 }
 .list-group-item{
-  align-self: left;
+  
   font-weight: bold;
+
+
+}
+.form{
+  width: 100%;
+
+}
+.material-icons{
+ 
+  cursor: pointer;
+
+}
+.trashicon{
+  margin-left: 30px;
+  cursor: pointer;
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.div1 {
+
+ 
+  position: relative;
+  z-index : 1;
+  background: rgb(248, 244, 244);
+}
+
+div1:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 90%;  /* or 100px */
+  border-bottom:1px solid red;
+}
+.foodimg{
+  align-self: left;
+  margin-right: 100px;
   border-style: solid;
-  border-color:  #FFA500;
-  border-width: 4px;
+  border-color:  #969994;
+  border-width: 1px;
   border-radius: 5px;
 }
