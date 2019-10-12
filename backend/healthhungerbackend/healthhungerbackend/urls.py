@@ -21,6 +21,7 @@ from mlmodel import views
 
 router = routers.DefaultRouter()                      # add this
 router.register(r'recipies', views.mlmodelView, 'recipe')     # add this
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
